@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="be98422d-f311-491d-b792-a71b74484ce3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:43568/USPSWebTools.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="USPSWebTools.wsdl" MetadataType="Wsdl" ID="71930373-c7f0-485e-a6f5-e688e51e67cc" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="USPSWebTools.xsd" MetadataType="Schema" ID="fcda8ee7-50d4-4c1a-a885-1e9266ec28ef" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?xsd=xsd0" />
+    <MetadataFile FileName="USPSWebTools.disco" MetadataType="Disco" ID="a5d8e7f9-0cc0-49b4-b939-6ba63f37203a" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?disco" />
+    <MetadataFile FileName="USPSWebTools1.xsd" MetadataType="Schema" ID="fcce6eee-6a2c-4c8d-97cc-f9cb897008e9" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?xsd=xsd4" />
+    <MetadataFile FileName="USPSWebTools2.xsd" MetadataType="Schema" ID="896ab391-28a4-442b-8277-ca063561bbbb" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?xsd=xsd1" />
+    <MetadataFile FileName="USPSWebTools1.wsdl" MetadataType="Wsdl" ID="6a5fa042-a904-4e9a-a74c-63c97b3f5499" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?wsdl" />
+    <MetadataFile FileName="USPSWebTools3.xsd" MetadataType="Schema" ID="d52ba62d-14ce-4db2-9391-c3b6bbc435a5" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?xsd=xsd3" />
+    <MetadataFile FileName="USPSWebTools4.xsd" MetadataType="Schema" ID="fc18712f-ce68-4e99-a9f5-a03c18a6ca67" SourceId="1" SourceUrl="http://localhost:43568/USPSWebTools.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

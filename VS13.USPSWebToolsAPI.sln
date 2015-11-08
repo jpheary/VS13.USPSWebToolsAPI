@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{598AFCF4-43C8-4FE1-924A-869C04D0CE28}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+		USPS Web Tool Kit Development Guide.pdf = USPS Web Tool Kit Development Guide.pdf
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "VS13.USPSWebToolsAPI.Web", "http://localhost:43184", "{4F2D6732-9E18-4E2B-AF9E-636A8F823AE8}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_43184"
+		Debug.AspNetCompiler.PhysicalPath = "VS13.USPSWebToolsAPI.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43184\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_43184"
+		Release.AspNetCompiler.PhysicalPath = "VS13.USPSWebToolsAPI.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43184\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "VS13.USPSWebToolsAPI.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{C772187F-4561-4C96-BDEB-495D2CB96516} = {C772187F-4561-4C96-BDEB-495D2CB96516}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.USPSWebToolsAPI.Win", "VS13.USPSWebToolsAPI.Win\VS13.USPSWebToolsAPI.Win.csproj", "{0479E0EC-5ADC-4477-89C3-2D5216DAB122}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C772187F-4561-4C96-BDEB-495D2CB96516} = {C772187F-4561-4C96-BDEB-495D2CB96516}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.USPSWebToolsAPI.Svc", "VS13.USPSWebToolsAPI.Svc\VS13.USPSWebToolsAPI.Svc.csproj", "{C772187F-4561-4C96-BDEB-495D2CB96516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS13.USPSWebToolsAPI.Mvc", "VS13.USPSWebToolsAPI.Mvc\VS13.USPSWebToolsAPI.Mvc.csproj", "{F7020A28-C7A6-436B-B497-F5D94FCFA27F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F2D6732-9E18-4E2B-AF9E-636A8F823AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2D6732-9E18-4E2B-AF9E-636A8F823AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2D6732-9E18-4E2B-AF9E-636A8F823AE8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2D6732-9E18-4E2B-AF9E-636A8F823AE8}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0479E0EC-5ADC-4477-89C3-2D5216DAB122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0479E0EC-5ADC-4477-89C3-2D5216DAB122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0479E0EC-5ADC-4477-89C3-2D5216DAB122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0479E0EC-5ADC-4477-89C3-2D5216DAB122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C772187F-4561-4C96-BDEB-495D2CB96516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C772187F-4561-4C96-BDEB-495D2CB96516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C772187F-4561-4C96-BDEB-495D2CB96516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C772187F-4561-4C96-BDEB-495D2CB96516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7020A28-C7A6-436B-B497-F5D94FCFA27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7020A28-C7A6-436B-B497-F5D94FCFA27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7020A28-C7A6-436B-B497-F5D94FCFA27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7020A28-C7A6-436B-B497-F5D94FCFA27F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://VS13.USPS" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://VS13.USPS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://VS13.USPS/Imports">
+      <xsd:import schemaLocation="http://localhost:43568/USPSWebTools.svc?xsd=xsd0" namespace="http://VS13.USPS" />
+      <xsd:import schemaLocation="http://localhost:43568/USPSWebTools.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VS13.USPS" />
+      <xsd:import schemaLocation="http://localhost:43568/USPSWebTools.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:43568/USPSWebTools.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:43568/USPSWebTools.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUSPSWebTools_TrackRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrackRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrackRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackRequest_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q1:USPSFault" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrackFieldRequest" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrackFieldRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequest_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q2:USPSFault" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrackFieldRequests" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrackFieldRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_TrackFieldRequests_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q3:USPSFault" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_VerifyAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyAddress" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_VerifyAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_VerifyAddress_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q4:USPSFault" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupCityState_InputMessage">
+    <wsdl:part name="parameters" element="tns:LookupCityState" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupCityState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LookupCityStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupCityState_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q5:USPSFault" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupZipCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:LookupZipCode" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupZipCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LookupZipCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUSPSWebTools_LookupZipCode_USPSFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/VS13.USPS" name="detail" element="q6:USPSFault" />
+  </wsdl:message>
+  <wsdl:portType name="IUSPSWebTools">
+    <wsdl:operation name="TrackRequest">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackRequest" message="tns:IUSPSWebTools_TrackRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackRequestResponse" message="tns:IUSPSWebTools_TrackRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_TrackRequest_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackFieldRequest">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackFieldRequest" message="tns:IUSPSWebTools_TrackFieldRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackFieldRequestResponse" message="tns:IUSPSWebTools_TrackFieldRequest_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_TrackFieldRequest_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackFieldRequests">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackFieldRequests" message="tns:IUSPSWebTools_TrackFieldRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/TrackFieldRequestsResponse" message="tns:IUSPSWebTools_TrackFieldRequests_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_TrackFieldRequests_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAddress">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/VerifyAddress" message="tns:IUSPSWebTools_VerifyAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/VerifyAddressResponse" message="tns:IUSPSWebTools_VerifyAddress_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_VerifyAddress_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LookupCityState">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/LookupCityState" message="tns:IUSPSWebTools_LookupCityState_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/LookupCityStateResponse" message="tns:IUSPSWebTools_LookupCityState_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_LookupCityState_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LookupZipCode">
+      <wsdl:input wsaw:Action="http://VS13.USPS/IUSPSWebTools/LookupZipCode" message="tns:IUSPSWebTools_LookupZipCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://VS13.USPS/IUSPSWebTools/LookupZipCodeResponse" message="tns:IUSPSWebTools_LookupZipCode_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.USPSFault" name="USPSFaultFault" message="tns:IUSPSWebTools_LookupZipCode_USPSFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
